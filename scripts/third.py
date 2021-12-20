@@ -6,12 +6,12 @@ n = 1
 
 def cb(message):
     global n
-    n = message.data*2
+    n = message.data*3
 
 if __name__ == '__main__':
-    rospy.init_node('twice')
-    sub = rospy.Subscriber('count_up', Int32, cb)
-    pub = rospy.Publisher('twice', Int32, queue_size=1)
+    rospy.init_node('third')
+    sub = rospy.Subscriber('twice', Int32, cb)
+    pub = rospy.Publisher('third', Int32, queue_size=1)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         pub.publish(n)
