@@ -1,10 +1,7 @@
-# robosys_ros
-
-
 # 2021年ロボットシステム学課題２
 
 
-# プログラム
+## プログラム
 
 
 ROSの機能を用いて計算を行うプログラム
@@ -13,57 +10,57 @@ ROSの機能を用いて計算を行うプログラム
 1から順に＋1されるプログラムに計24倍された数を24で割るプログラム
 
 
-ex.)3 * 2 * 3 * 4 / 24 = 3 ＜ー　これを出力
+ex.)3 * 2 * 3 * 4 / 24 = 3 
 
 
 ______
 
 
-#動作環境
+## 動作環境
 
 
-| OS | ROS |  
+|OS|ROS|  
 |:---|----:|
 | Ubuntu20.04 | ROS1-noetic |
 
 
-# ノード連携
+## ノード連携
 
 
  - count.py 
 
 
-   ー＞１から順に＋１されるノード
+  １から順に＋１されるノード
 
 
  - twice.py
 
 
-  ー＞count.pyからSubscribeした数を2倍してPublishする
+  count.pyからSubscribeした数を2倍してPublishする
 
 
  - third.py
 
 
-  ー＞twice.pyからSubscribeした数を3倍してPublishする
+  twice.pyからSubscribeした数を3倍してPublishする
 
 
  - quadruple.py
 
 
-  ー＞third.pyからSubscribeした数を4倍してPublishする
+  third.pyからSubscribeした数を4倍してPublishする
 
 
  - devid.py
 
 
-  ー＞quadruple.pyからSubscribeした数を24で割算してPublishする
+  quadruple.pyからSubscribeした数を24で割算してPublishする
 
 
 ______
 
 
-#実行方法
+## 実行方法
 
 
 1. roscore
@@ -77,16 +74,16 @@ ______
   1.rosrun mypkg count.py
 
 
-  1.rosrun mypkg twice.py
+  2.rosrun mypkg twice.py
 
  
-  1.rosrun mypkg third.py
+  3.rosrun mypkg third.py
 
 
-  1.rosrun mypkg quadruple.py
+  4.rosrun mypkg quadruple.py
 
 
-  1.rosrun mypkg devid.py
+  5.rosrun mypkg devid.py
 
 
 ＊また、今後一回のrosrunで各ノードが立ち上げられるroslaunchファイルを作成予定
