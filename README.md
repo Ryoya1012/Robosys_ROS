@@ -19,8 +19,8 @@ ______
 ## 動作環境
 
 
-|OS|ROS|  
-|:---|----:|
+|      OS     |     ROS     |  
+|:------------|------------:|
 | Ubuntu20.04 | ROS1-noetic |
 
 
@@ -30,31 +30,31 @@ ______
  - count.py 
 
 
-  １から順に＋１されるノード
+    １から順に＋１されるノード
 
 
  - twice.py
 
-
-  count.pyからSubscribeした数を2倍してPublishする
+ 
+    count.pyからSubscribeした数を2倍してPublishする
 
 
  - third.py
 
 
-  twice.pyからSubscribeした数を3倍してPublishする
+    twice.pyからSubscribeした数を3倍してPublishする
 
 
  - quadruple.py
 
 
-  third.pyからSubscribeした数を4倍してPublishする
+    third.pyからSubscribeした数を4倍してPublishする
 
 
  - devid.py
 
 
-  quadruple.pyからSubscribeした数を24で割算してPublishする
+    quadruple.pyからSubscribeした数を24で割算してPublishする
 
 
 ______
@@ -65,42 +65,42 @@ ______
 
 1. roscore
 
-   (ROSを立ち上げる)
+     (ROSを立ち上げる)
 
 
 1. 各ノードを立ち上げる
  
 
-  1.rosrun mypkg count.py
+    1.rosrun mypkg count.py
 
 
-  2.rosrun mypkg twice.py
+    2.rosrun mypkg twice.py
 
  
-  3.rosrun mypkg third.py
+    3.rosrun mypkg third.py
 
 
-  4.rosrun mypkg quadruple.py
+    4.rosrun mypkg quadruple.py
 
 
-  5.rosrun mypkg devid.py
+    5.rosrun mypkg devid.py
 
 
 ＊また、今後一回のrosrunで各ノードが立ち上げられるroslaunchファイルを作成予定
 
-1.各ノードが正常に立ち上がっているか確認
+ 2. 各ノードが正常に立ち上がっているか確認
 
 
- - rostopic list
+   - rostopic list
 
 
   この際に立ち上げたノード名がすべて表示されていれば正常に立ち上がっている
 
 
-1.出力
+ 3. 出力
 
 
- - rostopic echo /devid
+   - rostopic echo /devid
 
 
 ____
