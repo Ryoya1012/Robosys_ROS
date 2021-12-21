@@ -69,7 +69,7 @@ ______
 
 
 ```
-1. roscore
+ $ roscore
 ```
 
 
@@ -80,27 +80,27 @@ ______
  
 
 ```
-    1.rosrun mypkg count.py
+ $  rosrun mypkg count.py
 ```
 
 
 ```
-    2.rosrun mypkg twice.py
+ $  rosrun mypkg twice.py
 ```
 
 
 ``` 
-    3.rosrun mypkg third.py
+ $  rosrun mypkg third.py
 ```
 
 
 ```
-    4.rosrun mypkg quadruple.py
+ $  rosrun mypkg quadruple.py
 ```
 
 
 ```
-    5.rosrun mypkg devid.py
+ $  rosrun mypkg devid.py
 ```
 
 
@@ -109,7 +109,7 @@ ______
 
 
 ```
-  - roslaunch mypkg mypkg launch
+ $  roslaunch mypkg mypkg launch
 ```
 
 
@@ -118,7 +118,7 @@ ______
 
 
 ```
-   - rostopic list
+ $  rostopic list
 ```
 
 
@@ -130,7 +130,7 @@ ______
 
 
 ```
-   - rostopic echo /devid
+ $  rostopic echo /devid
 ```
 
 
