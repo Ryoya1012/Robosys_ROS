@@ -91,7 +91,11 @@ ______
     5.rosrun mypkg devid.py
 
 
-＊また、今後一回のrosrunで各ノードが立ち上げられるroslaunchファイルを作成予定
+＊または、このレポジトリ内にlaunchfileを作成したため以下のように立ち上げることもできる
+
+
+  - roslaunch mypkg mypkg launch
+
 
  2. 各ノードが正常に立ち上がっているか確認
 
