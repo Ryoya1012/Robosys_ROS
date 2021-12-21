@@ -13,6 +13,11 @@ ROSの機能を用いて計算を行うプログラム
 ex.)3 * 2 * 3 * 4 / 24 = 3 
 
 
+ROSのインストールは以下のURLから各自行ってください
+
+
+[上田先生のレポジトリを参考](https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_desktop)
+
 ______
 
 
