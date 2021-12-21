@@ -68,7 +68,10 @@ ______
 ## 実行方法
 
 
+```
 1. roscore
+```
+
 
      (ROSを立ち上げる)
 
@@ -76,47 +79,47 @@ ______
 1. 各ノードを立ち上げる
  
 
-'''
+```
     1.rosrun mypkg count.py
-'''
+```
 
 
-'''
+```
     2.rosrun mypkg twice.py
-'''
+```
 
 
-''' 
+``` 
     3.rosrun mypkg third.py
-'''
+```
 
 
-'''
+```
     4.rosrun mypkg quadruple.py
-'''
+```
 
 
-'''
+```
     5.rosrun mypkg devid.py
-'''
+```
 
 
 
 ＊または、このレポジトリ内にlaunchfileを作成したため以下のように立ち上げることもできる
 
 
-'''
+```
   - roslaunch mypkg mypkg launch
-'''
+```
 
 
 
  2. 各ノードが正常に立ち上がっているか確認
 
 
-'''
+```
    - rostopic list
-'''
+```
 
 
 
@@ -126,9 +129,9 @@ ______
  3. 出力
 
 
-'''
+```
    - rostopic echo /devid
-'''
+```
 
 
 
