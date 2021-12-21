@@ -1,5 +1,5 @@
-"SPDX-License-Identifer: GPL-3.0"
-"*Copyright (c) 2021 Ryoya Sato. All rights resrved."
+#SPDX-License-Identifer: GPL-3.0
+#*Copyright (c) 2021 Ryoya Sato. All rights resrved.
 
 #! /usr/bin/env python3
 import rospy
